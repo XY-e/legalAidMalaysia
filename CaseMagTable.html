@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Case Management</title>
+    <link rel="stylesheet" href="CaseMagTable.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Employee:
+            <input type="text" id="name" name="name" required>
+            <input type="text" id="city" name="city" required>
+            <input type="text" id="state" name="state" required>
+        </h1>
+    </div>
+
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Case No</th>
+                    <th>Case Type
+                        <select id="case-type">
+                            <option value="">All Types</option>
+                            <option value="work_unemployment">Work and Unemployment Problems</option>
+                            <option value="housing_rental">Housing and Rental Problems</option>
+                            <option value="education">Education</option>
+                            <option value="family">Family (Divorce, Child Custody, etc.)</option>
+                            <option value="money">Money Problems</option>
+                            <option value="benefit">Benefits (Food Stamps, Disability)</option>
+                            <option value="domesticViolence">Domestic Violence</option>
+                            <option value="expungement">Expungement</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="wills_attorneyPower_advance">Wills / Power of Attorney / Advance</option>
+                            <option value="directives">Directives</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </th>
+                    <th>Application Submitted On
+                        <select id="submitted-on">
+                            <option value="5days">Last 5 days</option>
+                            <option value="15days">Last 15 days</option>
+                            <option value="30days">Last 30 days</option>
+                        </select>
+                    </th>
+                    <th>State of Incident
+                        <select id="state-of-incident">
+                            <option value="johor">Johor</option>
+                            <option value="kedah">Kedah</option>
+                            <option value="kelantan">Kelantan</option>
+                            <option value="pahang">Pahang</option>
+                            <option value="perak">Perak</option>
+                            <option value="selangor">Selangor</option>
+                            <option value="terengganu">Terengganu</option>
+                            <option value="perlis">Perlis</option>
+                            <option value="negeriSembilan ">Negeri Sembilan</option>
+                            <option value="melaka">Melaka</option>
+                            <option value="penang">Penang</option>
+                            <option value="sarawak">Sarawak</option>
+                            <option value="sabah">Sabah</option>
+                            <option value="kuala Lumpur">Kuala Lumpur</option>
+                            <option value="labuan">Labuan</option>
+                            <option value="putrajaya">Putrajaya</option>
+                            <option value="all">Show All States</option>
+                        </select>
+                    </th>
+                    <th>Current Status
+                        <select id="current-status">
+                            <option value="awaiting-pic">Awaiting PIC Assignment</option>
+                            <option value="under-review">Application Under Review</option>
+                            <option value="interview-scheduled">Interview Scheduled</option>
+                            <option value="processing">Application Processing</option>
+                            <option value="legal-aid-offered">Legal Aid Terms Offered</option>
+                            <option value="registration-fee-pending">Registration Fee Pending</option>
+                            <option value="legal-aid-granted">Legal Aid Granted</option>
+                        </select>
+                    </th>
+                    <th>PIC’s Name</th>
+                    <th>PIC’s Employee ID</th>
+                    <th>applicant Name</th>
+                    <th>applicant NRIC</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

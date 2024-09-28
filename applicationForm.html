@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Assistance Application</title>
+    <link rel="stylesheet" href="applicationForm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Legal Assistance Application Form</h1>
+        <form>
+            
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label for="name">Applicant Name:</label>
+                <input type="text" id="name" name="applicant_name" required>
+                <br/>
+                <label for="nric">Applicant NRIC:</label>
+                <input type="text" id="nric" name="applicant_nric" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Address</legend>
+                <label for="street">Street Address Line 1:</label>
+                <input type="text" id="street" name="street_address_line1" required>
+                <br/>
+                <label for="street2">Street Address Line 2:</label>
+                <input type="text" id="street2" name="street_address_line2">
+                <br/>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <br/>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                <br/>
+                <label for="postal">Postal / Zip Code:</label>
+                <input type="text" id="postal" name="postal_code" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br/>                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br/>
+                <label for="contact_method">Preferred Contact Method:</label>
+                <select id="contact_method" name="contact_method" required>
+                    <option value="email">Email</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="call">Call</option>
+                </select>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Legal Problem</legend>
+                <label for="legal_city">Choose the city where you are experiencing your legal problem:</label>
+                <input type="text" id="legal_city" name="legal_city" required>
+                <br/>
+                <label for="legal_state">Choose the state where you are experiencing your legal problem:</label>
+                <select id="legal_state" name="legal_state" required>
+                    <option value="johor">Johor</option>
+                    <option value="kedah">Kedah</option>
+                    <option value="kelantan">Kelantan</option>
+                    <option value="pahang">Pahang</option>
+                    <option value="perak">Perak</option>
+                    <option value="selangor">Selangor</option>
+                    <option value="terengganu">Terengganu</option>
+                    <option value="perlis">Perlis</option>
+                    <option value="negeriSembilan ">Negeri Sembilan</option>
+                    <option value="melaka">Melaka</option>
+                    <option value="penang">Penang</option>
+                    <option value="sarawak">Sarawak</option>
+                    <option value="sabah">Sabah</option>
+                    <option value="kuala Lumpur">Kuala Lumpur</option>
+                    <option value="labuan">Labuan</option>
+                    <option value="putrajaya">Putrajaya</option>
+                </select>
+                <br/>
+                <label for="legal_type">What kind of legal problem do you have?</label><br>
+
+                <input type="radio" id="work_unemployment" name="legal_type" value="work_unemployment" required>
+                <label for="work_unemployment">Work and Unemployment Problems</label><br>
+
+                <input type="radio" id="housing_rental" name="legal_type" value="housing_rental">
+                <label for="housing_rental">Housing and Rental Problems</label><br>
+
+                <input type="radio" id="education" name="legal_type" value="education">
+                <label for="education">Education</label><br>
+
+                <input type="radio" id="family" name="legal_type" value="family">
+                <label for="family">Family (Divorce, Child Custody, etc.)</label><br>
+
+                <input type="radio" id="money" name="legal_type" value="money">
+                <label for="money">Money Problems</label><br>
+
+                <input type="radio" id="benefit" name="legal_type" value="benefit">
+                <label for="benefit">Benefits (Food Stamps, Disability)</label><br>
+
+                <input type="radio" id="domesticViolence" name="legal_type" value="domesticViolence">
+                <label for="domesticViolence">Domestic Violence</label><br>
+
+                <input type="radio" id="expungement" name="legal_type" value="expungement">
+                <label for="expungement">Expungement</label><br>
+
+                <input type="radio" id="healthcare" name="legal_type" value="healthcare">
+                <label for="healthcare">Healthcare</label><br>
+
+                <input type="radio" id="wills_attorneyPower_advance" name="legal_type" value="wills_attorneyPower_advance">
+                <label for="wills_attorneyPower_advance">Wills / Power of Attorney / Advance</label><br>
+
+                <input type="radio" id="directives" name="legal_type" value="directives">
+                <label for="directives">Directives</label><br>
+
+                <input type="radio" id="other_radio" name="legal_type" value="other">
+                <label for="other_radio">Other</label>
+                <input type="text" id="other" name="other" style="display:none;"><br>
+
+                <label for="details">Detailed Information About Your Legal Problem:</label>
+                <br/>
+                <textarea id="details" name="legal_details" rows="4" required></textarea>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Income Information</legend>
+                <label for="income">Income:</label>
+                <input type="text" id="income" name="income" required>
+                <br/>
+                <label for="proof_income">Proof of Income<small>(Salary Slip/ Income Tax Form (Individual)/ Retiree Card/ Pension Statement/ Income Verification Letter/ Non-Employment Verification Letter)</small>:</label>
+                <br>
+                <input type="file" id="income_document" name="income_document" accept=".pdf, .docx, .jpg, .jpeg, .png" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Guardian Information</legend>
+                <label for="guardian_name">Guardian Name:</label>
+                <input type="text" id="guardian_name" name="guardian_name" >
+                <br/>
+                <label for="guardian_nric">Guardian NRIC:</label>
+                <input type="text" id="guardian_nric" name="guardian_nric" >
+                <br/>
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" name="relationship" >
+                <br/>
+                <label for="guardian_income">Income:</label>
+                <input type="text" id="guardian_income" name="guardian_income" >
+                <br/>
+                <label for="proof_income">Proof of Income<small>(Salary Slip/ Income Tax Form (Individual)/ Retiree Card/ Pension Statement/ Income Verification Letter/ Non-Employment Verification Letter)</small>:</label>
+                <br>
+                <input type="file" id="income_document" name="income_document" accept=".pdf, .docx, .jpg, .jpeg, .png" required>
+            </fieldset>
+
+            <button type="submit" onclick="location.href='MainPg.html'">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

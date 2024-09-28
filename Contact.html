@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Legal Aid Malaysia</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="navcontainer">
+        <div class="navbar">
+            <div class="navbar-left">Legal Aid Malaysia</div>
+            <div class="navbar-right">
+                <a href="MainPg.html">Home</a>
+                <a href="Help.html">Help</a>
+                <a href="Contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <!-- Left side: Contact us message -->
+        <div class="leftContainer">
+            <h1>Contact Us</h1>
+            <p>If you have questions or need assistance, please don’t hesitate to reach out to us. Our dedicated team is here to help you navigate your legal needs and ensure you receive the support you deserve.</p>
+        </div>
+
+        <!-- Right side: Contact form -->
+        <div class="rightContainer">
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone No</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
